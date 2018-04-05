@@ -19,6 +19,13 @@ public class BankAccount extends Account
         balance = deposit;
     }
     
+    public BankAccount( String name, double deposit, int accountNumber )
+    {
+        super( name, accountNumber );
+        
+        balance = deposit;
+    }
+    
     public double getBalance()
     {
         return balance;

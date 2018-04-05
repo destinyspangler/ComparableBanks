@@ -59,6 +59,11 @@ public class Bank
         return null;
     }
     
+    public BankAccount[] getAccounts()
+    {
+        return accounts.toArray( new BankAccount[1] );  // may need to change?
+    }
+    
     public void deposit( BankAccount b, double amount )
     {
         b.deposit( amount );
